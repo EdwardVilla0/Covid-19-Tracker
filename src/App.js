@@ -24,9 +24,10 @@ function App() {
     getCountriesData();
   }, []);
 
-  const onCountryChange = async (event) => {
+  const onCountryChange = (event) => {
     const countryCode = event.target.value;
-    console.log(" asdfasd f   ", countryCode);
+    setCountry(countryCode);
+
   }
 
   return (
@@ -46,6 +47,9 @@ function App() {
 
           </Select>
         </FormControl>
+
+      </div>
+      <div className="app_stats">
 
       </div>
     </div>
