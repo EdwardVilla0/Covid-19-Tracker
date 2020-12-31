@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Table.style.css';
 
 function Table({ countries }) {
     return (
