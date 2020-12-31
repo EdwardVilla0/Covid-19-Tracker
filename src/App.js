@@ -3,6 +3,7 @@ import { Select, FormControl, MenuItem, Card, CardContent } from '@material-ui/c
 import InfoBox from './components/InfoBox/InfoBox.component';
 import Map from './components/Map/Map.component';
 import Table from './components/Table/Table.component';
+import { sortData } from './util/util';
 import './App.css';
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
               value: country.countryInfo.iso2
             }));
 
-          setTableData(data);
+          const sortedData = sortData(data);
+          setTableData(sortedData);
           setCountries(countries);
         });
     };
