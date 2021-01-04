@@ -46,7 +46,7 @@ const options = {
     }
 }
 
-function LineGraph() {
+function LineGraph({ casesType = "cases" }) {
     const [data, setData] = useState({});
 
     const buildChartData = (data, casesType = "cases") => {
@@ -78,7 +78,7 @@ function LineGraph() {
         }
 
         fetchData();
-    }, []);
+    }, [casesType]);
 
 
 

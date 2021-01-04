@@ -89,7 +89,7 @@ function App() {
         <CardContent>
           <h3>Live cases by county</h3>
           <Table countries={tableData} />
-          <h3>new cases</h3>+
+          <h3>new cases</h3>
           <LineGraph />
         </CardContent>
       </Card>
